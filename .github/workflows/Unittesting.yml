@@ -23,5 +23,5 @@ jobs: # what should we do when it is run
     - name: List directory contents
       run: ls -al
 
-    - name: traceofmatrix_unit_test.py
+    - name: Test traceofmatrix_unit_test.py
       run: pytest traceofmatrix_unit_test.py
