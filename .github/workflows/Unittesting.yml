@@ -18,10 +18,8 @@ jobs: # what should we do when it is run
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest test.py
+        pytest traceofmatrix_unit_test.py
 
     - name: List directory contents
       run: ls -al
 
-    - name: test traceofmatrix_unit_test.py
-      run: pytest traceofmatrix_unit_test.py
