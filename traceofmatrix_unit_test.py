@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from TraceTimeCheck import recursive_trace
+import TraceTimeCheck
 
 class TestTraceMethods(unittest.TestCase):
     def test_recursive_trace(self):
