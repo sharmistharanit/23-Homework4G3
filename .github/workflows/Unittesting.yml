@@ -6,9 +6,9 @@ jobs: # what should we do when it is run
   build:
     runs-on: ubuntu-latest # platform it runs on
     steps:
-    - uses: actions/checkout@v2 # checkout your code
+    - uses: actions/checkout@v4 # checkout your code
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: '3.11' # specify python version
     - name: Install dependencies # which libraries do we need for testing
@@ -23,5 +23,5 @@ jobs: # what should we do when it is run
     - name: List directory contents
       run: ls -al
 
-    - name: Test traceofmatrix_unit_test.py
+    - name: test traceofmatrix_unit_test.py
       run: pytest traceofmatrix_unit_test.py
